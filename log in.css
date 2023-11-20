@@ -130,13 +130,15 @@ body {
 }
 
 .wrapper {
-  max-width: 700px;
+  width: 50%;
   margin: 50px auto;
   background:	lightgrey;
   box-sizing: border-box;
   padding: 40px;
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  border-radius: 10px;
 }
+
 
 h1 {
   text-align: center;
@@ -177,10 +179,10 @@ h1 {
 .input > input {
   font-size: 15px;
   border: 0;
-  width: 250px;
+  width: 100%;
   padding: 10px 20px;
   outline: none;
-  margin: 20px;
+  margin: 10px;
 }
 
 .msg > textarea {
@@ -289,6 +291,32 @@ a {
 
 @media (max-width: 768px) {
   .wrapper {
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 7px;
+  }
+
+  .form-title {
+    font-size: 22px;
+  }
+
+  .radio {
+    font-size: 15px;
+  }
+
+  .radio label {
+    font-size: 15px;
+  }
+
+  .input-form {
+    margin-bottom: 10px;
+  }
+
+  .inner-msg {
+    margin-bottom: 10px;
+  }
+
+  footer {
+    margin-top: 10px;
   }
 }

@@ -174,4 +174,9 @@ footer img {
 
 .jumbotron img{
   width: 100%;
+  border-radius: 7px;
+}
+
+.jumbotron {
+  text-align: center;
 }

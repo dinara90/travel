@@ -199,4 +199,17 @@ a {
     padding: 20px;
     grid-template-columns: repeat(1, 1fr);
   }
+
+  header h1 {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .div-blocks {
+    padding: 0;
+  }
+
+  .div-list {
+    padding: 0;
+  }
 }
