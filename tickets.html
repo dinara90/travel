@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Добавление CDN для работы с bootstrap, favicon, font awesome а также чтобы добавить css и javascript-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -15,40 +16,27 @@
   <script src="js/animation.js"></script>
 </head>
 <body>
+<!-- верхнее меню для перехода между страницами-->
 <nav class="menu-area">
-  <ul>
-    <li id="li1"><a title="home" href="#"><span class="side-nav" onclick="toggleNav()"><i class="fa-solid fa-bars"></i></span></a></li>
-    <li><a title="Dinara travel" href="index.html"><img id="img1" src="images/logo.png"></i></a></li>
-    <li><a title="hot tours" href="hot%20tours.html">HOT TOURS</a></li>
-    <li><a title="log in" href="log%20in.html">LOG IN<img src="images/person.png"></a></li>
-  </ul>
+	<ul>
+		<li id="li1"><a title="home" href="#"><span class="side-nav" onclick="toggleNav()"><i class="fa-solid fa-bars"></i></span></a></li>
+		<li><a title="Dinara travel" href="index.html"><img id="img1" src="images/logo.png"></i></a></li>
+		<li><a title="hot tours" href="hot%20tours.html">HOT TOURS</a></li>
+		<li><a title="log in" href="log%20in.html">LOG IN<img src="images/person.png"></a></li>
+	</ul>
 </nav>
+<!-- боковое меню для перехода между страницами с анимацией JS-->
 <div id="Sidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="must%20visit.html">You must visit</a>
-  <a title="tickets" href="tickets.html">Tickets</a>
-  <a href="contact%20us.html">Contact Us</a>
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="must%20visit.html">You must visit</a>
+	<a title="tickets" href="tickets.html">Tickets</a>
+	<a href="contact us.html">Contact Us</a>
 </div>
-<script>
-  function toggleNav() {
-    var nav = document.getElementById("Sidenav");
-    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-    if (screenWidth > 768) {
-      nav.style.width = (nav.style.width === "15%") ? "0" : "15%";
-    } else {
-      nav.style.width = (nav.style.width === "100%") ? "0" : "100%";
-    }
-  }
-
-
-  function closeNav() {
-    document.getElementById("Sidenav").style.width = "0";
-  }
-</script>
   <header>
     <h2>Please enter the data</h2>
   </header>
+  <!-- форма для подбора билетов-->
  <form> <div class="search">
   <div>
     <select class="from">
@@ -125,6 +113,8 @@
       <li data-target="#Carousel" data-slide-to="5"></li>
       <li data-target="#Carousel" data-slide-to="6"></li>
     </ol>
+
+    <!-- boostrap карусель из фотографий-->
     <div class="carousel-inner">
       <div class="item active">
         <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/a/a7/Air_Astana_logo.svg/1280px-Air_Astana_logo.svg.png">
@@ -147,18 +137,19 @@
     </a>
   </div>
 </div>
+<!-- футер с информацией и социальными сетями-->
 <footer>
-
   <div class="footer-text">
-    <ul>
-      <li><img src="images/logo.png" alt="logo"></li>
-      <li>City: Astana, Kazakhstan</li>
-      <li>Our Address: Kunayeva 33</li>
-      <li>Email address: dinara.travel@mail.ru</li>
-      <li>Phone number: +7(777)0001234</li>
-    </ul>
+      <ul>
+          <li><img src="images/logo.png" alt="logo"></li>
+          <li>City: Astana, Kazakhstan</li>
+          <li>Our Address: Kunayeva 33</li>
+          <li>Email address: dinara.travel@mail.ru</li>
+          <li>Phone number: +7(777)0001234</li>
+      </ul>
   </div>
 
+  <!-- использовались font awesome для фото социальных сетей-->
   <a href="#" class="fa fa-facebook"></a>
   <a href="#" class="fa fa-linkedin"></a>
   <a href="#" class="fa fa-instagram"></a>

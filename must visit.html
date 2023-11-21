@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Добавление CDN для работы с bootstrap, favicon, font awesome а также чтобы добавить css и javascript-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -15,40 +16,27 @@
     <script src="js/animation.js"></script>
 </head>
 <body>
+<!-- верхнее меню для перехода между страницами-->
 <nav class="menu-area">
-    <ul>
-        <li id="li1"><a title="home" href="#"><span class="side-nav" onclick="toggleNav()"><i class="fa-solid fa-bars"></i></span></a></li>
-        <li><a title="Dinara travel" href="index.html"><img id="img1" src="images/logo.png"></i></a></li>
-        <li><a title="hot tours" href="hot%20tours.html">HOT TOURS</a></li>
-        <li><a title="log in" href="log%20in.html">LOG IN<img src="images/person.png"></a></li>
-    </ul>
+	<ul>
+		<li id="li1"><a title="home" href="#"><span class="side-nav" onclick="toggleNav()"><i class="fa-solid fa-bars"></i></span></a></li>
+		<li><a title="Dinara travel" href="index.html"><img id="img1" src="images/logo.png"></i></a></li>
+		<li><a title="hot tours" href="hot%20tours.html">HOT TOURS</a></li>
+		<li><a title="log in" href="log%20in.html">LOG IN<img src="images/person.png"></a></li>
+	</ul>
 </nav>
+<!-- боковое меню для перехода между страницами с анимацией JS из animation.js файла-->
 <div id="Sidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="must visit.html">You must visit</a>
-    <a title="tickets" href="tickets.html">Tickets</a>
-    <a href="contact%20us.html">Contact Us</a>
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="must%20visit.html">You must visit</a>
+	<a title="tickets" href="tickets.html">Tickets</a>
+	<a href="contact us.html">Contact Us</a>
 </div>
-<script>
-    function toggleNav() {
-        var nav = document.getElementById("Sidenav");
-        var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-        if (screenWidth > 768) {
-            nav.style.width = (nav.style.width === "15%") ? "0" : "15%";
-        } else {
-            nav.style.width = (nav.style.width === "100%") ? "0" : "100%";
-        }
-    }
-
-
-    function closeNav() {
-        document.getElementById("Sidenav").style.width = "0";
-    }
-</script>
 <center><header>
   <h1>TOP 10 PLACES YOU MUST VISIT</h1>
 </header></center>
+<!-- карусель с фотографиями boostrap-->
 <div class="container">
   <div id="Carousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -113,8 +101,8 @@
 </div>
 
 <div class="div-blocks">
+<!-- блоки с информацией о турах, использовался grid -->
 <div class="div-list">
-
 <div class="div-img">
   <img src="images/burj_khalifa.png">
  <div class="div-text">
@@ -165,9 +153,9 @@ Around 50 tonnes of paint are added to the Eiffel Tower every 7 years to protect
 </div>
 
 <div class="div-img">
-  <img src="images/thailand_islands.png">
+  <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2023/01/31124623/Great-Wall-Of-China.jpg?tr=w-1200,h-900">
  <div class="div-text">
- <h1>Thailand Islands</h1>
+ <h1>Great Chinese Wall</h1>
  <p>With a total length of 21,196.18 km (13,170.70 miles), equal to half the length of the Equator, the Great Wall of China is the longest feat of human engineering.In the main today’s wall comprises relics from the Ming Dynasty (1368 - 1644), measuring 8,851.8 km (5,500 miles).The average height of the walls is  6 to 7 meters (20 to 23 feet), and the highest is 14 meters (46 feet ).The altitudes of the walls vary – the highest point is the Huanglouyuan in the northwest suburb of Beijing, with an elevation of 1,439.3 meters (4,722 feet), while the lowest point is at Laolongtou in Hebei, just above the sea level.The average width is 6.5 meters (21.3 feet).</p>
 </div>
 </div>
@@ -196,23 +184,26 @@ Around 50 tonnes of paint are added to the Eiffel Tower every 7 years to protect
 </div>
 </div>
 </div>
+<!-- футер с информацией и социальными сетями-->
 <footer>
-    <div class="footer-text">
-        <ul>
-            <li><img src="images/logo.png" alt="logo"></li>
-            <li>City: Astana, Kazakhstan</li>
-            <li>Our Address: Kunayeva 33</li>
-            <li>Email address: dinara.travel@mail.ru</li>
-            <li>Phone number: +7(777)0001234</li>
-        </ul>
-    </div>
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-linkedin"></a>
-    <a href="#" class="fa fa-instagram"></a>
-    <a href="#" class="fa fa-pinterest"></a>
-    <a href="#" class="fa fa-yahoo"></a>
-    <a href="#" class="fa fa-reddit"></a>
-    <a href="#" class="fa fa-rss"></a>
+  <div class="footer-text">
+      <ul>
+          <li><img src="images/logo.png" alt="logo"></li>
+          <li>City: Astana, Kazakhstan</li>
+          <li>Our Address: Kunayeva 33</li>
+          <li>Email address: dinara.travel@mail.ru</li>
+          <li>Phone number: +7(777)0001234</li>
+      </ul>
+  </div>
+
+  <!-- использовались font awesome для фото социальных сетей-->
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-linkedin"></a>
+  <a href="#" class="fa fa-instagram"></a>
+  <a href="#" class="fa fa-pinterest"></a>
+  <a href="#" class="fa fa-yahoo"></a>
+  <a href="#" class="fa fa-reddit"></a>
+  <a href="#" class="fa fa-rss"></a>
 </footer>
 </body>
 </html>

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Dinara Travel</title>
+  <!-- Добавление CDN для работы с bootstrap, favicon, font awesome а также чтобы добавить css и javascript-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -15,21 +16,26 @@
     <script src="js/animation.js"></script>
 </head>
 <body>
+  <!-- Верхнее меню (navigation bar) для перехода между страницами-->
 <nav class="menu-area">
     <ul>
+      <!-- Структура navigation bar-->
+      <!-- кнопка для закрытия меню, работает с javascript-->
         <li id="li1"><a title="home" href="#"><span class="side-nav" onclick="toggleNav()"><i class="fa-solid fa-bars"></i></span></a></li>
         <li><a title="Dinara travel" href="index.html"><img id="img1" src="images/logo.png"></i></a></li>
         <li><a title="hot tours" href="hot%20tours.html">HOT TOURS</a></li>
         <li><a title="log in" href="log in.html">LOG IN<img src="images/person.png"></a></li>
     </ul>
 </nav>
-
+<!-- Боковое меню (side navigation bar) для перехода между страницами сайта-->
 <div id="Sidenav" class="sidenav">
+  <!-- кнопка для закрытия меню, работает с javascript-->
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="must%20visit.html">You must visit</a>
     <a title="tickets" href="tickets.html">Tickets</a>
     <a href="contact%20us.html">Contact Us</a>
 </div>
+<!-- Основной блок с формой и регистрационными полями-->
 <div class="wrapper" id="wrapper">
 <form id="form">
   <h1>Registration</h1>
@@ -79,8 +85,9 @@
   </div>
 </form>
 </div>
-<footer>
 
+<!-- футер с информацией и социальными сетями-->
+<footer>
     <div class="footer-text">
         <ul>
             <li><img src="images/logo.png" alt="logo"></li>
@@ -91,6 +98,7 @@
         </ul>
     </div>
 
+    <!-- использовались font awesome для фото социальных сетей-->
     <a href="#" class="fa fa-facebook"></a>
     <a href="#" class="fa fa-linkedin"></a>
     <a href="#" class="fa fa-instagram"></a>
